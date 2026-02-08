@@ -156,7 +156,7 @@ const ProfileGlow = () => (
       className="absolute inset-0 -z-10 bg-gradient-to-tr from-accent via-purple-500 to-accent rounded-full blur-xl scale-110"
     />
     <img 
-      src="/ProfilePhoto.JPG" 
+      src={import.meta.env.BASE_URL + "ProfilePhoto.JPG"} 
       alt="Pranjali Murdeshwar" 
       className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-white dark:border-gray-800 relative z-10"
     />
@@ -213,7 +213,7 @@ const Hero = () => {
           className="flex flex-wrap items-center gap-6"
         >
           <a 
-            href="/Pranjali-resume.pdf" 
+            href={import.meta.env.BASE_URL + "Pranjali-resume.pdf"} 
             download
             className="flex items-center gap-2 px-6 py-3 bg-text text-background rounded-full font-semibold hover:bg-accent transition-colors"
           >
