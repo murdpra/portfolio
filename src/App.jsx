@@ -405,7 +405,7 @@ const Footer = () => (
     <div className="max-w-3xl mx-auto">
       <h2 className="text-4xl md:text-5xl font-bold text-text mb-8">Ready to engineer the future?</h2>
       <p className="text-xl text-secondary mb-12 max-w-2xl mx-auto">
-        Currently open to new opportunities in Software Engineering,Data Engineering and AI. Let's build something extraordinary.
+        Currently open to new opportunities in Software Engineering, Data Engineering and AI. Let's build something extraordinary.
       </p>
       <a 
         href="mailto:murdpra93@gmail.com"
