@@ -15,7 +15,11 @@ const PORTFOLIO_DATA = {
     ],
   },
   about: {
-    bio: "I am a passionate Software Engineer. My most recent role was as a Software Engineer II at Walmart Global Tech, where I specialized in building resilient, high-scale distributed systems and data engineering pipelines. With a strong foundation in Java, Spring Boot, Apache Spark, and Kafka, I architect solutions that drive enterprise-grade performance. My passion lies in pushing the boundaries of Agentic AI, leveraging tools like CrewAI and LangChain. Beyond the code, I am a data enthusiast and an extrovert who thrives on social interaction and discussing new ideas. You can often find me singing, experimenting in the kitchen, or hiking nature trails. I hold a Master's in Computer Information Systems from Colorado State University.",
+    bio: [
+      "I am a passionate Software Engineer with a strong focus on building resilient, high-scale distributed systems and data engineering pipelines. Most recently, I worked as a Software Engineer II at Walmart Global Tech, where I designed and architected enterprise-grade solutions using Java, Spring Boot, Apache Spark, and Kafka.",
+      "I hold a Master’s degree in Computer Information Systems from Colorado State University, which strengthened my understanding of data systems, scalable architectures, and enterprise software development. Alongside my engineering work, I am a data enthusiast who enjoys uncovering insights, working with large-scale datasets, and building data-driven solutions.",
+      "I am particularly interested in pushing the boundaries of Agentic AI, actively exploring and leveraging frameworks such as CrewAI and LangChain. Beyond technology, I am an extrovert who thrives on social interaction and exchanging new ideas. Outside of work, you’ll often find me singing, experimenting in the kitchen, or hiking nature trails."
+    ],
     skills: [
       "Java", "Python", "C++", "Spring Boot", "Apache Spark", "Kafka", "React", "AWS", "Docker", "Kubernetes", "System Design", "Agentic AI", "LangChain"
     ]
@@ -256,9 +260,13 @@ const About = () => {
       <div className="max-w-4xl mx-auto">
         <SectionHeading>About Me</SectionHeading>
         <div className="glass p-8 md:p-12 rounded-3xl border border-gray-200 dark:border-gray-800">
-          <p className="text-lg text-secondary leading-relaxed mb-8">
-            {PORTFOLIO_DATA.about.bio}
-          </p>
+          <div className="space-y-6 mb-8">
+            {PORTFOLIO_DATA.about.bio.map((paragraph, index) => (
+              <p key={index} className="text-lg text-secondary leading-relaxed">
+                {paragraph}
+              </p>
+            ))}
+          </div>
           <div className="flex flex-wrap gap-3">
             {PORTFOLIO_DATA.about.skills.map((skill) => (
               <span key={skill} className="px-4 py-2 text-sm font-medium text-text bg-gray-100 dark:bg-gray-800 rounded-full">
@@ -405,7 +413,7 @@ const Footer = () => (
     <div className="max-w-3xl mx-auto">
       <h2 className="text-4xl md:text-5xl font-bold text-text mb-8">Ready to engineer the future?</h2>
       <p className="text-xl text-secondary mb-12 max-w-2xl mx-auto">
-        Currently open to new opportunities in Software Engineering, Data Engineering and AI. Let's build something extraordinary.
+        Currently open to new opportunities in Software Engineering, Data Engineering or AI. Let's build something extraordinary.
       </p>
       <a 
         href="mailto:murdpra93@gmail.com"
