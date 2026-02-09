@@ -51,6 +51,18 @@ const PORTFOLIO_DATA = {
         "Constructed Grafana and Splunk dashboard for tracking system health metrics with zero downtime.",
         "Authored 90+ unit tests with JUnit/Mockito, increasing backend reliability and code quality by 45%."
       ]
+    },
+    {
+      company: "Tata Consultancy Services Pvt. Ltd",
+      role: "Systems Engineer",
+      period: "Jan 2017 – Dec 2019",
+      location: "Bengaluru, India",
+      description: "Orchestrated end-to-end SDLC for IAM, elevating operational workflow by 70% through script provisioning. Developed VB.NET, C++ and MySQL solutions, ensuring database integrity across enterprise applications.",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/b/b1/Tata_Consultancy_Services_Logo.svg",
+      details: [
+        "Orchestrated end-to-end SDLC for IAM, elevating operational workflow by 70% through script provisioning.",
+        "Developed VB.NET, C++ and MySQL solutions, ensuring database integrity across enterprise applications."
+      ]
     }
   ],
   projects: [
@@ -212,14 +224,7 @@ const Hero = () => {
           transition={{ duration: 1, delay: 0.8 }}
           className="flex flex-wrap items-center gap-6"
         >
-          <a 
-            href={import.meta.env.BASE_URL + "Pranjali-resume.pdf"} 
-            download
-            className="flex items-center gap-2 px-6 py-3 bg-text text-background rounded-full font-semibold hover:bg-accent transition-colors"
-          >
-            <Download size={20} />
-            Download Resume
-          </a>
+
 
           <div className="flex space-x-6">
             {PORTFOLIO_DATA.hero.socials.map((social) => (
