@@ -15,7 +15,7 @@ const PORTFOLIO_DATA = {
     ],
   },
   about: {
-    bio: "I am a Software Engineer II at Walmart Global Tech, specializing in building resilient, high-scale distributed systems and data engineering pipelines. With a strong foundation in Java, Spring Boot, Apache Spark, and Kafka, I architect solutions that drive enterprise-grade performance. My passion lies in pushing the boundaries of Agentic AI, leveraging tools like CrewAI and LangChain to automate complex workflows and create intelligent, autonomous systems. I hold a Master's in Computer Information Systems from Colorado State University.",
+    bio: "I am a passionate Software Engineer. My most recent role was as a Software Engineer II at Walmart Global Tech, where I specialized in building resilient, high-scale distributed systems and data engineering pipelines. With a strong foundation in Java, Spring Boot, Apache Spark, and Kafka, I architect solutions that drive enterprise-grade performance. My passion lies in pushing the boundaries of Agentic AI, leveraging tools like CrewAI and LangChain. Beyond the code, I am a data enthusiast and an extrovert who thrives on social interaction and discussing new ideas. You can often find me singing, experimenting in the kitchen, or hiking nature trails. I hold a Master's in Computer Information Systems from Colorado State University.",
     skills: [
       "Java", "Python", "C++", "Spring Boot", "Apache Spark", "Kafka", "React", "AWS", "Docker", "Kubernetes", "System Design", "Agentic AI", "LangChain"
     ]
@@ -24,7 +24,7 @@ const PORTFOLIO_DATA = {
     {
       company: "Walmart",
       role: "Software Engineer II",
-      period: "Aug 2022 — Present",
+      period: "Aug 2022 — Aug 2025",
       location: "Sunnyvale, CA",
       description: "Synthesized seller notification system with Apache Spark, increasing seller interaction by 31%. Automated weekly performance analytics with Kafka. Refactored legacy services to Java 17/Spring Boot, reducing tech debt by 40%.",
       logo: "https://upload.wikimedia.org/wikipedia/commons/c/ca/Walmart_logo.svg",
@@ -57,7 +57,7 @@ const PORTFOLIO_DATA = {
       role: "Systems Engineer",
       period: "Jan 2017 – Dec 2019",
       location: "Bengaluru, India",
-      description: "Orchestrated end-to-end SDLC for IAM, elevating operational workflow by 70% through script provisioning. Developed VB.NET, C++ and MySQL solutions, ensuring database integrity across enterprise applications.",
+      description: "Specialized in Identity and Access Management (IAM) systems and enterprise application development, significantly improving operational efficiency and data integrity.",
       logo: "https://upload.wikimedia.org/wikipedia/commons/b/b1/Tata_Consultancy_Services_Logo.svg",
       details: [
         "Orchestrated end-to-end SDLC for IAM, elevating operational workflow by 70% through script provisioning.",
@@ -112,7 +112,7 @@ const Navbar = () => {
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-white/80 dark:bg-black/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800" : "bg-transparent"}`}>
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="#" className="text-xl font-semibold tracking-tight text-text">PM</a>
+        <div className="text-xl font-semibold tracking-tight text-text">PM</div>
         
         {/* Desktop Nav */}
         <div className="hidden md:flex space-x-8">
@@ -405,7 +405,7 @@ const Footer = () => (
     <div className="max-w-3xl mx-auto">
       <h2 className="text-4xl md:text-5xl font-bold text-text mb-8">Ready to engineer the future?</h2>
       <p className="text-xl text-secondary mb-12 max-w-2xl mx-auto">
-        Currently open to new opportunities in distributed systems and AI. Let's build something extraordinary.
+        Currently open to new opportunities in Software Engineering,Data Engineering and AI. Let's build something extraordinary.
       </p>
       <a 
         href="mailto:murdpra93@gmail.com"
