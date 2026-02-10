@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import ReactGA from "react-ga4";
 import { Menu, X, Github, Linkedin, Mail, ChevronRight, ChevronDown, ChevronUp, ExternalLink, Code2, Terminal, Cpu, Database, Download } from "lucide-react";
 
 // --- Data ---
@@ -430,6 +431,16 @@ const Footer = () => (
 );
 
 function App() {
+  useEffect(() => {
+    // Initialize Google Analytics
+    // The ID is pulled from environment variables (VITE_GA_MEASUREMENT_ID)
+    if (import.meta.env.VITE_GA_MEASUREMENT_ID) {
+      ReactGA.initialize(import.meta.env.VITE_GA_MEASUREMENT_ID);
+      ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+    }
+  }, []);
+
+
   return (
     <div className="bg-background min-h-screen text-text selection:bg-accent selection:text-white">
       <Navbar />
